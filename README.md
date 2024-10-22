@@ -182,6 +182,9 @@ Expected Response:json
     }
   ]
 }
+
+![image](https://github.com/user-attachments/assets/0eca1824-9cff-4937-9afc-564fb7f9e3b1)
+
 **3. Get a Specific Transaction by ID**
 Method: GET
 URL: http://localhost:3000/transactions/1
@@ -199,6 +202,8 @@ Copy code
   "description": "Monthly salary",
   "userId": 1
 }
+![image](https://github.com/user-attachments/assets/262e0a94-776b-4d60-b8ca-27cef42cbe0b)
+
 **4. Update a Transaction by ID**
 Method: PUT
 URL: http://localhost:3000/transactions/1
@@ -218,6 +223,9 @@ Expected Response:json
 {
   "message": "Transaction updated successfully"
 }
+
+![image](https://github.com/user-attachments/assets/8a2196e7-5ada-47bd-acc7-084e6515151c)
+
 **5. Delete a Transaction by ID**
 Method: DELETE
 URL: http://localhost:3000/transactions/1
@@ -227,6 +235,9 @@ Expected Response:json
 {
   "message": "Transaction deleted successfully"
 }
+
+![image](https://github.com/user-attachments/assets/a799d5e3-8380-4664-935d-7bb4b1a971aa)
+
 **6. Check Summary Endpoint**
 Get a Summary of Transactions
 Method: GET
@@ -240,6 +251,7 @@ Expected Response:json
     "total": 1500
   }
 ]
+![image](https://github.com/user-attachments/assets/69fa877c-6ff7-43e8-8b0a-3bad9c6abe3d)
 
 
 **7. Delete all Transactions**
@@ -277,7 +289,9 @@ Response:json
   }
 ]
 
-5. Error Handling Testing
+![image](https://github.com/user-attachments/assets/91715ac5-5a8f-4601-a01e-c86eb0e5a579)
+
+9. Error Handling Testing
 You should also test error scenarios, such as:
 
 Invalid login credentials.
@@ -285,7 +299,7 @@ Missing fields in the transaction request.
 Fetching or updating a transaction that doesn't exist.
 This will help ensure your API responds appropriately to errors and invalid data.
 
-6. Summary
+10. Summary
 By following these steps in Postman:
 
 Register a user.
