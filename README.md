@@ -70,11 +70,10 @@ To check if all the endpoints of your Personal Financial Records API are working
 Download Postman from Postman website and install it.
 Launch Postman after installation.
 2. Check Authentication Endpoints
-1. Register a New User
+**1. Register a New User**
 Method: POST
 URL: http://localhost:3000/auth/register
-Body: Select raw and JSON format in the body section, then enter the following:
-json
+Body: Select raw and JSON format in the body section, then enter the following:json
 
 {
   "username": "testuser",
@@ -91,7 +90,7 @@ Expected Response:json
 ![image](https://github.com/user-attachments/assets/cf3ddd84-cb80-4aab-8500-0104cfbf0791)
 
 
-2. Login to Get a JWT Token
+**2. Login to Get a JWT Token**
 Method: POST
 URL: http://localhost:3000/auth/login
 Body: Select raw and JSON format, then enter:json
@@ -108,6 +107,9 @@ Expected Response:json
   "message": "Login successful",
   "token": "your_jwt_token_here"
 }
+
+![image](https://github.com/user-attachments/assets/cdbf2ec5-576f-4f2d-9d19-7ea6fe7c3714)
+
 Copy the JWT token from the response for the next steps.
 **3. Check Transaction Endpoints (Authenticated)**
 For all further requests, you need to add the JWT token in the Authorization tab.
@@ -116,6 +118,7 @@ Go to Authorization tab in Postman.
 Set Type to Bearer Token.
 Paste the JWT token in the Token field.
 Now, check the following endpoints:
+![image](https://github.com/user-attachments/assets/f143afb0-542c-4585-8c41-56883dfc31d0)
 
 **1. Add a New Transaction**
 Method: POST
@@ -139,6 +142,10 @@ For Single Transaction:json
     { "transactionId": 1 }
   ]
 }
+
+
+![image](https://github.com/user-attachments/assets/75b30672-ac8d-430a-8997-dc99e9e55e1e)
+
 For Multiple Transactions:json
 
 {
@@ -149,14 +156,8 @@ For Multiple Transactions:json
   ]
 }
 
+![image](https://github.com/user-attachments/assets/42d0020d-28c7-44e7-bcdb-3e99b1cd0747)
 
-Click "Send".
-Expected Response:json
-
-{
-  "message": "Transaction added successfully",
-  "transactionId": 1
-}
 
 **2. Get All Transactions (With Pagination)**
 Method: GET
